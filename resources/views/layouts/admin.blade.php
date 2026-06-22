@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="{{ asset('/css/admin.css') }}" rel="stylesheet" />
+<link href="{{ asset('/css/admin.css') }}?v={{ filemtime(public_path('css/app.css')) }}" rel="stylesheet" />  <title>@yield('title', 'Online Store')</title>
   <title>@yield('title', 'Admin - Online Store')</title>
 </head>
 <body>
